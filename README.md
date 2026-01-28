@@ -24,3 +24,27 @@ This project explores the **COVID-19 dataset** (from [Our World in Data](https:/
  | **Views**                | Stored preprocessed data for reusable visualizations.                     | Matches my **database optimization** projects.         |
 
 ---
+## **📂 Project Structure**
+
+covid19-sql-data-exploration/
+│
+├── sql_scripts/
+│   ├── 01_data_cleaning.sql          # Joins, CTEs, and temp tables
+│   ├── 02_infection_rates.sql        # Aggregate functions for death/infection %
+│   ├── 03_vaccination_trends.sql     # Window functions for rolling vaccinations
+│   └── 04_global_metrics.sql         # Continent/country-level analysis
+│
+├── outputs/
+│   ├── infection_rates.csv           # Top countries by infection rate
+│   ├── vaccination_trends.csv        # Rolling vaccinations by location
+│   └── global_metrics.csv             # Aggregated death/infection stats
+│
+├── views/
+│   └── PercentPopulationVaccinated.sql # Reusable view for visualizations
+│
+└── README.md
+Copy
+
+
+
+
