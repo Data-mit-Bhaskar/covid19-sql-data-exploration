@@ -45,6 +45,52 @@ covid19-sql-data-exploration/
 └── README.md
 Copy
 
+---
+---
+## **🚀 Key Insights & CV Parallels**
+### **1. Data Cleaning = Real-World Preprocessing**
+- **Project**: Used **CTEs and temp tables** to handle missing values and convert data types (e.g., `Total_deaths` to `int`).
+- **CV Validation**:
+  - At **Sakon**, I reduced data errors by **11%** through similar cleaning techniques.
+  - Ensured **high-quality inputs** for analysis, mirroring my **ETL optimization** work.
+
+### **2. Window Functions = Trend Analysis**
+- **Project**: Calculated **rolling vaccinations** (`SUM() OVER PARTITION BY`) to track progress over time.
+- **CV Validation**:
+  - At **Mercedes-Benz**, I used **time-series models (LSTM)** to forecast production trends.
+
+### **3. Aggregate Functions = KPI Derivation**
+- **Project**: Derived **death percentages** and **infection rates** per population.
+- **CV Validation**:
+  - At **Sakon**, I built **Power BI dashboards** to track KPIs like sales growth and profit margins.
+
+### **4. View Creation = Reusable Analytics**
+- **Project**: Created a **SQL view** (`PercentPopulationVaccinated`) for future visualizations.
+- **CV Validation**:
+  - My **MSc. Data Analytics** projects (e.g., library database) emphasize **scalable data structures**.
+
+---
+## **📊 Key Queries & Outputs**
+| **Query**                          | **Purpose**                                                                 | **Output Example**                          |
+|------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------|
+| **Infection Rate by Country**      | Ranked countries by `% population infected`.                              | `Peru: 12.4%, USA: 9.8%`                   |
+| **Death Percentage by Continent**  | Compared death rates across continents.                                    | `Europe: 2.1%, Africa: 1.5%`              |
+| **Rolling Vaccinations**           | Tracked cumulative vaccinations per location.                             | `Germany: 65% vaccinated (2021-12)`        |
+| **Global Metrics**                 | Aggregated total cases/deaths and death percentage.                       | `Global Death %: 1.8%`                     |
+
+---
+## **🛠 How to Run This Project**
+1. **Prerequisites**:
+   - SQL Server (or compatible DBMS).
+   - Dataset: [Our World in Data COVID-19](https://ourworldindata.org/covid-cases) (import `CovidDeaths` and `CovidVaccinations` tables).
+     
+2. Open sql_scripts/ in your SQL client and execute queries sequentially.
+3. Explore outputs in outputs/ (CSV files) or the PercentPopulationVaccinated view.
+   on.git
+ 
+
+
+
 
 
 
